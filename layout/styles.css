@@ -3,3 +3,7 @@
     width: auto;  /* Keeps proportions */
     display: block;
 }
+#logo {
+    display: flex;
+    align-items: center;
+}
