@@ -21,3 +21,15 @@
 #footer {
     background-color: #145214 !important; /* Slightly darker green for footer */
 }
+/* Ensures all boxes are the same height */
+.grid-3 li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px; /* Adjust this value based on your needs */
+}
+
+/* Forces equal height for content inside boxes */
+.grid-3 li article {
+    flex-grow: 1;
+}
