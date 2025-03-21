@@ -1,22 +1,23 @@
 #logo {
-    position: absolute; /* Ensures it stays in a fixed spot */
-    top: 10px; /* Adjust the top spacing */
-    left: 20px; /* Push it to the left */
+    position: relative; /* More flexible than absolute for position */
     display: flex; /* Allows better alignment */
     align-items: center;
+    gap: 10px; /* Adds space between logo and title */
 }
 
 #logo img {
-    height: 20px; /* Adjust the logo size */
-    width: auto; /* Maintain aspect ratio */
+    height: 50px; /* Adjust this value to make it smaller */
+    width: auto; /* Keep aspect ratio */
 }
+
 #header {
-    background-color: #228B22; /* Dark Forest Green */
+    background-color: #228B22 !important; /* Dark Forest Green */
 }
+
 #mainav {
-    background-color: #228B22; /* Change navigation bar color */
+    background-color: #228B22 !important; /* Change navigation bar color */
 }
 
 #footer {
-    background-color: #145214; /* Slightly darker green for footer */
+    background-color: #145214 !important; /* Slightly darker green for footer */
 }
