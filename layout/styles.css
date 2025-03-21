@@ -1,6 +1,22 @@
-#logo img {
-    height: 60px; /* Adjust height */
-    width: auto;  /* Keeps proportions */
-    display: block;
+#logo {
+    position: absolute; /* Ensures it stays in a fixed spot */
+    top: 10px; /* Adjust the top spacing */
+    left: 20px; /* Push it to the left */
+    display: flex; /* Allows better alignment */
+    align-items: center;
 }
 
+#logo img {
+    height: 60px; /* Adjust the logo size */
+    width: auto; /* Maintain aspect ratio */
+}
+#header {
+    background-color: #228B22; /* Dark Forest Green */
+}
+#mainav {
+    background-color: #228B22; /* Change navigation bar color */
+}
+
+#footer {
+    background-color: #145214; /* Slightly darker green for footer */
+}
