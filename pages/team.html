@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meet the Team | BEFTA</title>
+  <link rel="stylesheet" href="../layout/styles/layout.css">
   <link rel="stylesheet" href="../layout/styles/team.css">
 </head>
 <body id="top">
@@ -11,34 +13,34 @@
   <header id="header" class="hoc clear">
     <div id="logo" class="fl_left">
       <a href="../index.html">
-        <img src="../images/demo/Logo.png" alt="BEFTA Logo" width="60">
+        <img src="../images/demo/Logo.png" alt="BEFTA Logo" width="60" />
       </a>
     </div>
     <nav id="mainav" class="fl_right">
-        <ul class="clear">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="collaborators.html">Collaborators</a></li>
-          <!-- Add more links here as needed -->
-        </ul>
-      </nav>      
+      <ul class="clear">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="collaborators.html">Collaborators</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Main Content -->
   <div class="wrapper row3">
     <main class="hoc container clear">
-      
-      <!-- 🔘 Project Tabs -->
+
+      <!-- Project Tabs -->
       <div class="tab-buttons">
         <button class="tab-btn active" data-target="understory">Understory Vegetation</button>
         <button class="tab-btn" data-target="riparian">Riparian Ecosystem Restoration</button>
+        <button class="tab-btn" data-target="smallholder">Smallholder Landscapes</button>
         <button class="tab-btn" data-target="malaysian">Malaysian Oil Palm</button>
       </div>
 
-      <!-- ✅ Understory -->
+      <!-- Understory -->
       <div class="tab-content active" id="understory">
         <div class="team-grid">
           <div class="team-member">
@@ -50,7 +52,7 @@
         </div>
       </div>
 
-      <!-- ✅ Riparian -->
+      <!-- Riparian -->
       <div class="tab-content" id="riparian">
         <div class="team-grid">
           <div class="team-member">
@@ -62,14 +64,26 @@
         </div>
       </div>
 
-      <!-- ✅ Malaysian -->
+      <!-- Smallholder -->
+      <div class="tab-content" id="smallholder">
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="../images/team/Becky_Heath.jpg" alt="Becky Heath">
+            <h3>Becky Heath</h3>
+            <p>Becky is the lead researcher for the Smallholder project, focusing on restoring smallholder plantation landscapes in Indonesia.</p>
+            <a class="more-btn" href="profiles/Becky.html">Find out more »</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Malaysian -->
       <div class="tab-content" id="malaysian">
         <div class="team-grid">
           <div class="team-member">
-            <img src="../images/team/Jean-Pierre.jpeg" alt="Jean-Pierre">
-            <h3>Jean-Pierre</h3>
+            <img src="../images/team/Godspower_Major.jpg" alt="Godspower">
+            <h3>Godspower Major</h3>
             <p>Field research lead in Malaysian oil palm plots...</p>
-            <a class="more-btn" href="profiles/Jean-Pierre.html">Find out more »</a>
+            <a class="more-btn" href="profiles/Godspower.html">Find out more »</a>
           </div>
         </div>
       </div>
@@ -84,7 +98,7 @@
     </footer>
   </div>
 
-  <!-- ✅ JavaScript now correctly placed at the bottom -->
+  <!-- Tabs Script -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const tabs = document.querySelectorAll('.tab-btn');
@@ -94,12 +108,13 @@
         btn.addEventListener('click', () => {
           tabs.forEach(b => b.classList.remove('active'));
           contents.forEach(c => c.classList.remove('active'));
-
           btn.classList.add('active');
           document.getElementById(btn.dataset.target).classList.add('active');
         });
       });
     });
   </script>
+
 </body>
 </html>
+
