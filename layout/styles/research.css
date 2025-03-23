@@ -1,0 +1,46 @@
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #228B22;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tab-btn.active,
+  .tab-btn:hover {
+    background-color: #145214;
+  }
+  
+  .tab-content {
+    display: none;
+    margin-top: 1rem;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  .project-figure {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .project-figure img {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .caption {
+    font-size: 0.9rem;
+    color: #444;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  
