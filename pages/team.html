@@ -1,79 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet Our Team | BEFTA</title>
-    <link rel="stylesheet" href="../layout/styles.css">
+  <meta charset="UTF-8">
+  <title>Meet the Team | BEFTA</title>
+  <link rel="stylesheet" href="../layout/styles/team.css">
 </head>
-<body>
-    <header>
-        <h1>Meet Our Team</h1>
-    </header>
+<body id="top">
 
-    <!-- Current Researchers Section -->
-    <div class="wrapper row1">
-        <h2>Current Researchers</h2>
-        <main class="team-grid">
-            <div class="team-member">
-                <img src="../images/team/Ed_Turner.jpg" alt="Ed's Profile">
-                <div class="bio">
-                    <p><strong>Ed</strong> has been a researcher specializing in biodiversity conservation for over 10 years...</p>
-                    <a href="profiles/ed.html" class="more-btn">Find out more »</a>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <img src="../images/team/Sarah_Luke.jpg" alt="Sarah's Profile">
-                <div class="bio">
-                    <p><strong>Sarah</strong> is an ecologist with a focus on sustainable agriculture and its impact...</p>
-                    <a href="profiles/Sarah.html" class="more-btn">Find out more »</a>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <img src="../images/team/Jean-Pierre.jpeg" alt="Jean-Pierre Profile">
-                <div class="bio">
-                    <p><strong><Jean-Pierre></Jean-Pierre></strong> has led numerous studies on biodiversity and ecosystem restoration...</p>
-                    <a href="profiles/Jean-Pierre.html" class="more-btn">Find out more »</a>
-                </div>
-            </div>
-        </main>
+  <!-- Header -->
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left">
+      <a href="../index.html">
+        <img src="../images/demo/Logo.png" alt="BEFTA Logo" width="60">
+      </a>
     </div>
+  </header>
 
-    <!-- Past Researchers Section -->
-    <div class="wrapper row2">
-        <h2>Past Researchers</h2>
-        <main class="team-grid">
-            <div class="team-member">
-                <img src="../images/team/alex.jpg" alt="Alex's Profile">
-                <div class="bio">
-                    <p><strong>Alex</strong> worked with BEFTA on ecosystem restoration from 2015 to 2020...</p>
-                    <a href="profiles/alex.html" class="more-btn">Find out more »</a>
-                </div>
-            </div>
+  <!-- Main Content -->
+  <div class="wrapper row3">
+    <main class="hoc container clear">
+      
+      <!-- 🔘 Project Tabs -->
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-target="understory">Understory Vegetation</button>
+        <button class="tab-btn" data-target="riparian">Riparian Ecosystem Restoration</button>
+        <button class="tab-btn" data-target="malaysian">Malaysian Oil Palm</button>
+      </div>
 
-            <div class="team-member">
-                <img src="../images/team/lisa.jpg" alt="Lisa's Profile">
-                <div class="bio">
-                    <p><strong>Lisa</strong> contributed to BEFTA’s research on biodiversity and conservation...</p>
-                    <a href="profiles/lisa.html" class="more-btn">Find out more »</a>
-                </div>
-            </div>
+      <!-- ✅ Understory -->
+      <div class="tab-content active" id="understory">
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="../images/team/Sarah_Luke.jpg" alt="Sarah Luke">
+            <h3>Sarah Luke</h3>
+            <p>Ecologist focused on vegetation and fauna...</p>
+            <a class="more-btn" href="profiles/Sarah.html">Find out more »</a>
+          </div>
+        </div>
+      </div>
 
-            <div class="team-member">
-                <img src="../images/team/michael.jpg" alt="Michael's Profile">
-                <div class="bio">
-                    <p><strong>Michael</strong> was a research assistant specializing in data analysis and modeling...</p>
-                    <a href="profiles/michael.html" class="more-btn">Find out more »</a>
-                </div>
-            </div>
-        </main>
-    </div>
+      <!-- ✅ Riparian -->
+      <div class="tab-content" id="riparian">
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="../images/team/Ed_Turner.jpg" alt="Ed Turner">
+            <h3>Ed Turner</h3>
+            <p>Research Director in riparian ecosystems...</p>
+            <a class="more-btn" href="profiles/Ed.html">Find out more »</a>
+          </div>
+        </div>
+      </div>
 
-    <footer>
-        <p>© 2025 BEFTA Research</p>
+      <!-- ✅ Malaysian -->
+      <div class="tab-content" id="malaysian">
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="../images/team/Jean-Pierre.jpeg" alt="Jean-Pierre">
+            <h3>Jean-Pierre</h3>
+            <p>Field research lead in Malaysian oil palm plots...</p>
+            <a class="more-btn" href="profiles/Jean-Pierre.html">Find out more »</a>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <div class="wrapper row5">
+    <footer id="footer" class="hoc clear">
+      <p>© BEFTA Project</p>
     </footer>
+  </div>
+
+  <!-- ✅ JavaScript now correctly placed at the bottom -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabs = document.querySelectorAll('.tab-btn');
+      const contents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabs.forEach(b => b.classList.remove('active'));
+          contents.forEach(c => c.classList.remove('active'));
+
+          btn.classList.add('active');
+          document.getElementById(btn.dataset.target).classList.add('active');
+        });
+      });
+    });
+  </script>
 </body>
 </html>
-
