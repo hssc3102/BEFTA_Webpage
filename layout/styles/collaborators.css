@@ -43,3 +43,24 @@
     margin-top: 0.5rem;
     font-style: italic;
   }
+
+  .collab-collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .collab-collage img {
+    width: 30%;
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .collab-collage img:hover {
+    transform: scale(1.05);
+  }

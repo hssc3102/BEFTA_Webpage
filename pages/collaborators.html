@@ -26,12 +26,6 @@
       flex: 1;
     }
 
-    .collab-images img {
-      max-width: 100%;
-      margin-top: 15px;
-      border-radius: 8px;
-    }
-
     .tab-content {
       display: none;
     }
@@ -39,10 +33,31 @@
     .tab-content.active {
       display: block;
     }
+
+    .collab-collage {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .collab-collage img {
+      width: 30%;
+      max-width: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .collab-collage img:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
-<body id="top">
 
+<body id="top">
   <!-- Header -->
   <header id="header" class="hoc clear">
     <div id="logo" class="fl_left">
@@ -66,9 +81,9 @@
   <div class="wrapper row3">
     <main class="hoc container clear">
       <h1 class="center">Collaborators</h1>
-      <p class="center">Research is not a lone venture, but highly collaborative across multiple countries.</p>
+      <p class="center">Research is not a lone venture, but a highly collaborative effort bringing minds together from across multiple countries.</p>
 
-      <!-- Tabs -->
+      <!-- Tab Buttons -->
       <div class="tab-buttons">
         <button class="tab-btn active" data-target="cambridge">University of Cambridge</button>
         <button class="tab-btn" data-target="ipb">IPB University</button>
@@ -85,7 +100,7 @@
             <h2>University of Cambridge - Insect Ecology Group</h2>
             <p>Our research group studies the ecology of insects, the impacts of human-induced habitat change on insect communities, and management solutions to maintain insect populations and associated ecosystem functions in natural and human-modified systems.</p>
             <ul>
-              <li>We currently collaborate on several large-scale projects in Southeast Asia that investigate ways that tropical agricultural ecosystems can be managed to benefit biodiversity, associated ecosystem services (such as pest control and decomposition), and to increase the long-term sustainability of tropical crops. This work is carried out in collaboration with Sinar Mas Agro Resources and Technology Research Institute, Wild Asia, Universiti Putra Malaysia, and IPB University, Indonesia.</li>
+              <li>We collaborate on several large-scale projects in Southeast Asia focused on biodiversity, ecosystem services (e.g., pest control), and sustainable agriculture. Partners include Sinar Mas Agro Resources and Technology, Wild Asia, Universiti Putra Malaysia, and IPB University.</li>
             </ul>
             <p>
               🔗 <a href="https://www.zoo.cam.ac.uk/research/groups/insect-ecology" target="_blank" rel="noopener noreferrer">
@@ -94,10 +109,11 @@
             </p>
           </div>
         </div>
-        <div class="collab-images">
-          <img src="../images/Research/BEFTA_1.jpg" alt="BEFTA Layout" />
-          <img src="../images/Research/BEFTA_2.jpg" alt="BEFTA Sampling" />
-          <img src="../images/Research/BEFTA_3.jpg" alt="BEFTA Plots" />
+        <div class="collab-collage">
+          <img src="../images/collaborators/Cambridge/Pic_1.jpg" alt="Cambridge Fieldwork 1">
+          <img src="../images/collaborators/Cambridge/Pic_2.jpg" alt="Cambridge Fieldwork 2">
+          <img src="../images/collaborators/Cambridge/Pic_3.jpg" alt="Cambridge Team">
+          <img src="../images/collaborators/Cambridge/Pic_4.jpg" alt="Cambridge Team">
         </div>
       </div>
 
@@ -142,19 +158,14 @@
           <img src="../images/collaborators/University_Nottingham.svg" class="collab-logo" alt="Nottingham Logo" />
           <div class="collab-info">
             <h2>University of Nottingham</h2>
-            <p>Top university in the UK, leading fieldwork and experimental restoration ecology in riparian zones. Lead by Sarah Luke.</p>
+            <p>Top university in the UK, leading experimental restoration ecology in riparian zones. Lead by Sarah Luke.</p>
             <ul>
-              <li>Collaborating researchers are focused on sustainable practices in reforestation and oil palm transitions.</li>
+              <li>Collaborators work on reforestation and oil palm landscape restoration in Sumatra and Borneo.</li>
             </ul>
-            <p>
-              🔗 <a href="https://www.zoo.cam.ac.uk/research/groups/insect-ecology" target="_blank" rel="noopener noreferrer">
-                Learn more about the Insect Ecology Group at Cambridge »
-              </a>
-            </p>
           </div>
         </div>
-        <div class="collab-images">
-          <img src="../images/Research/RERTA_1.jpg" alt="RERTA Setup" />
+        <div class="collab-collage">
+          <img src="../images/Research/RERTA_1.jpg" alt="RERTA Restoration Work">
         </div>
       </div>
 
@@ -195,6 +206,5 @@
       });
     });
   </script>
-
 </body>
 </html>
