@@ -1,35 +1,61 @@
+/* === Logo Container Styling === */
 #logo {
-    position: relative; /* More flexible than absolute for position */
-    display: flex; /* Allows better alignment */
+    position: relative;
+    display: flex;
     align-items: center;
-    gap: 10px; /* Adds space between logo and title */
-}
-
-#logo img {
-    height: 50px; /* Adjust this value to make it smaller */
-    width: auto; /* Keep aspect ratio */
-}
-
-#header {
-    background-color: #228B22 !important; /* Dark Forest Green */
-}
-
-#mainav {
-    background-color: #228B22 !important; /* Change navigation bar color */
-}
-
-#footer {
-    background-color: #145214 !important; /* Slightly darker green for footer */
-}
-/* Ensures all boxes are the same height */
-.grid-3 li {
+    gap: 20px;
+    background: transparent; /* ✅ Removes background color block */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* === Logo Image === */
+  #logo img {
+    height: 40px;   /* ✅ Smaller but still clearly visible */
+    width: auto;
+    background: transparent; /* Just in case the image has background padding */
+    border: none;
+  }
+  
+  /* === Navigation Bar and Header === */
+  #header {
+    background-color: #228B22 !important; /* ✅ Dark forest green */
+    border-bottom: 3px solid #145214;      /* Optional accent line */
+  }
+  
+  #mainav {
+    background-color: #228B22 !important; /* ✅ Ensures consistent color */
+  }
+  
+  #mainav ul li a {
+    color: white;           /* ✅ White text for contrast */
+    font-weight: bold;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+  
+  #mainav ul li a:hover {
+    background-color: #145214; /* ✅ Darker green on hover */
+    color: #fff;
+  }
+  
+  /* === Footer === */
+  #footer {
+    background-color: #145214 !important; /* ✅ Darker green */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* === Equal-height boxes === */
+  .grid-3 li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 250px; /* Adjust this value based on your needs */
-}
-
-/* Forces equal height for content inside boxes */
-.grid-3 li article {
+    height: 250px;
+  }
+  
+  .grid-3 li article {
     flex-grow: 1;
-}
+  }
+  
