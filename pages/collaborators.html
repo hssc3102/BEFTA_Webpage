@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Meet the Team | BEFTA</title>
-  <link rel="stylesheet" href="../layout/styles/team.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collaborators | BEFTA</title>
+  <link rel="stylesheet" href="../layout/styles/layout.css">
+  <link rel="stylesheet" href="../layout/styles/collaborators.css" />
+  <style>
+    .collab-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .collab-logo {
+      max-width: 120px;
+      max-height: 120px;
+      flex-shrink: 0;
+      border-radius: 8px;
+    }
+
+    .collab-info {
+      flex: 1;
+    }
+
+    .collab-images img {
+      max-width: 100%;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
 </head>
 <body id="top">
 
@@ -11,18 +47,134 @@
   <header id="header" class="hoc clear">
     <div id="logo" class="fl_left">
       <a href="../index.html">
-        <img src="../images/demo/Logo.png" alt="BEFTA Logo" width="60">
+        <img src="../images/demo/Logo.png" alt="BEFTA Logo" width="60" />
       </a>
     </div>
     <nav id="mainav" class="fl_right">
-        <ul class="clear">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="collaborators.html">Collaborators</a></li>
-          <!-- Add more links here as needed -->
-        </ul>
-      </nav>      
+      <ul class="clear">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="collaborators.html">Collaborators</a></li>
+      </ul>
+    </nav>
   </header>
+
+  <!-- Main Section -->
+  <div class="wrapper row3">
+    <main class="hoc container clear">
+      <h1 class="center">Collaborators</h1>
+      <p class="center">Research is not a lone venture, but highly collaborative across multiple countries.</p>
+
+      <!-- Tabs -->
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-target="cambridge">University of Cambridge</button>
+        <button class="tab-btn" data-target="ipb">IPB University</button>
+        <button class="tab-btn" data-target="sinar">Sinar Mas</button>
+        <button class="tab-btn" data-target="nottingham">University of Nottingham</button>
+        <button class="tab-btn" data-target="others">Others</button>
+      </div>
+
+      <!-- Cambridge -->
+      <div class="tab-content active" id="cambridge">
+        <div class="collab-section">
+          <img src="../images/collaborators/University_Cambridge.png" class="collab-logo" alt="Cambridge Logo" />
+          <div class="collab-info">
+            <h2>University of Cambridge - Insect Ecology Group</h2>
+            <p>Our research group studies the ecology of insects, the impacts of human-induced habitat change on insect communities, and management solutions to maintain insect populations and associated ecosystem functions in natural and human-modified systems.</p>
+            <ul>
+              <li>We currently collaborate on several large-scale projects in Southeast Asia that investigate ways that tropical agricultural ecosystems can be managed to benefit biodiversity, associated ecosystem services (such as pest control and decomposition), and to increase the long-term sustainability of tropical crops. This work is carried out in collaboration with Sinar Mas Agro Resources and Technology Research Institute, Wild Asia, Universiti Putra Malaysia, and IPB University, Indonesia.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="collab-images">
+          <img src="../images/Research/BEFTA_1.jpg" alt="BEFTA Layout" />
+          <img src="../images/Research/BEFTA_2.jpg" alt="BEFTA Sampling" />
+          <img src="../images/Research/BEFTA_3.jpg" alt="BEFTA Plots" />
+        </div>
+      </div>
+
+      <!-- IPB -->
+      <div class="tab-content" id="ipb">
+        <div class="collab-section">
+          <img src="../images/collaborators/IPB_University.svg" class="collab-logo" alt="IPB Logo" />
+          <div class="collab-info">
+            <h2>IPB University - Bogor, Indonesia</h2>
+            <p>IPB University focuses on biodiversity, forest connectivity, and ecological restoration.</p>
+            <ul>
+              <li>Research includes the SAFE project and broader palm oil landscapes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sinar Mas -->
+      <div class="tab-content" id="sinar">
+        <div class="collab-section">
+          <img src="../images/collaborators/SinarMas.png" class="collab-logo" alt="Sinar Mas Logo" />
+          <div class="collab-info">
+            <h2>Sinar Mas Agro Resources & Technology (SMART)</h2>
+            <p>Sinar Mas supports sustainable palm oil management practices and research, in partnership with academic institutions and local stakeholders.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nottingham -->
+      <div class="tab-content" id="nottingham">
+        <div class="collab-section">
+          <img src="../images/collaborators/University_Nottingham.svg" class="collab-logo" alt="Nottingham Logo" />
+          <div class="collab-info">
+            <h2>University of Nottingham</h2>
+            <p>Top university in the UK, leading fieldwork and experimental restoration ecology in riparian zones. Lead by Sarah Luke.</p>
+            <ul>
+              <li>Collaborating researchers are focused on sustainable practices in reforestation and oil palm transitions.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="collab-images">
+          <img src="../images/Research/RERTA_1.jpg" alt="RERTA Setup" />
+        </div>
+      </div>
+
+      <!-- Others -->
+      <div class="tab-content" id="others">
+        <div class="collab-section">
+          <img src="../images/collaborators/placeholder-logo.png" class="collab-logo" alt="Other Logo" />
+          <div class="collab-info">
+            <h2>Other Collaborators</h2>
+            <p>Additional collaborators and networks may be added here as our partnerships expand.</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <div class="wrapper row5">
+    <footer id="footer" class="hoc clear">
+      <p>© 2025 BEFTA Research</p>
+    </footer>
+  </div>
+
+  <!-- Tabs Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabs = document.querySelectorAll('.tab-btn');
+      const contents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabs.forEach(b => b.classList.remove('active'));
+          contents.forEach(c => c.classList.remove('active'));
+          btn.classList.add('active');
+          document.getElementById(btn.dataset.target).classList.add('active');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
