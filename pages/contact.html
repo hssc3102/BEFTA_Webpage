@@ -1,52 +1,79 @@
 <!DOCTYPE html>
-<!--
-Template Name: Nekmit
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Copyright: OS-Templates.com
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
--->
-<html lang="">
-<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<html lang="en">
 <head>
-<title>Oil Palm Biodiversity | Pages | Full Width</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <meta charset="UTF-8">
+  <title>Contact Us | BEFTA</title>
+  <link rel="stylesheet" href="../layout/styles/layout.css">
+  <link rel="stylesheet" href="../layout/styles/contact.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- Top Background Image Wrapper -->
-<div class="bgded overlay padtop" style="background-image:url('../images/Placeholder.jpg');"> 
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
+
+  <!-- Header -->
   <header id="header" class="hoc clear">
-    <div id="logo" class="fl_left"> 
-      <!-- ################################################################################################ -->
-      <h1><a href="../index.html">BEFTA</a></h1>
-      <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <a href="../index.html">
+        <img src="../images/Logo.png" alt="BEFTA Logo" width="60">
+      </a>
     </div>
-    <nav id="mainav" class="fl_right"> 
-      <!-- ################################################################################################ -->
+    <nav id="mainav" class="fl_right">
       <ul class="clear">
         <li><a href="../index.html">Home</a></li>
-        <li class="active"><a class="drop" href="#">Pages</a>
-          <ul>
-            <li><a href="research.html">Research Overview</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="collaborators.html">Collaborators</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-          </ul>
-        <li>
-          <a href="pages/contact.html"> Contact Us</a>
-        </li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="collaborators.html">Collaborators</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
       </ul>
-      <!-- ################################################################################################ -->
     </nav>
   </header>
+
+  <!-- Main Content -->
+  <div class="wrapper row3">
+    <main class="hoc container clear">
+      <h1 class="center">Contact Us</h1>
+      <p class="center">Use the form below to get in touch with the relevant team member based on your inquiry.</p>
+
+      <div class="contact-form-box">
+        <form action="#" method="post">
+
+          <!-- Project Dropdown -->
+          <label for="project">Select Project:</label>
+          <select id="project" name="project" required>
+            <option value="" disabled selected>Select a project</option>
+            <option value="general">General</option>
+            <option value="befta">BEFTA</option>
+            <option value="rerta">RERTA</option>
+            <option value="smallholder">Smallholder</option>
+            <option value="malaysia">Malaysia</option>
+          </select>
+
+          <!-- Name -->
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <!-- Email -->
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <!-- Message -->
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <!-- Submit -->
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <div class="wrapper row5">
+    <footer id="footer" class="hoc clear">
+      <p>© 2025 BEFTA Research</p>
+    </footer>
+  </div>
+
+</body>
+</html>
