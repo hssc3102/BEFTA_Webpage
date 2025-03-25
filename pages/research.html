@@ -149,19 +149,33 @@
 
   <!-- JavaScript for Tabs -->
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const tabs = document.querySelectorAll('.tab-btn');
-      const contents = document.querySelectorAll('.tab-content');
+  document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
 
+    function activateTabById(tabId) {
       tabs.forEach(btn => {
-        btn.addEventListener('click', () => {
-          tabs.forEach(b => b.classList.remove('active'));
-          contents.forEach(c => c.classList.remove('active'));
-          btn.classList.add('active');
-          document.getElementById(btn.dataset.target).classList.add('active');
-        });
+        btn.classList.toggle('active', btn.dataset.target === tabId);
+      });
+
+      contents.forEach(content => {
+        content.classList.toggle('active', content.id === tabId);
+      });
+    }
+
+    // Handle direct link via URL hash (e.g. #rerta)
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      activateTabById(hash);
+    }
+
+    // Handle click on tab buttons
+    tabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        activateTabById(btn.dataset.target);
       });
     });
+  });
   </script>
 </body>
 </html>
