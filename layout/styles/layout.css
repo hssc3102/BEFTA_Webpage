@@ -13,8 +13,9 @@
 #header #logo h1{margin:0; padding:0; font-size:2rem; font-variant:small-caps;}
 
 #logo img {
-	height: 300px; /* or whatever size you want */
-	width: auto; /* maintain aspect ratio */
+	height: auto;
+	width: 300px;
+	max-height: none; /* override the 30px limit */
   }
 
 
@@ -101,12 +102,22 @@
 .sidebar .sdb_holder{margin-bottom:50px;}
 .sidebar .sdb_holder:last-child{margin-bottom:0;}
 
-#logo img {
-	height: auto;
-	max-height: 30px; /* Optional limit */
+ul.logos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px 0;
+	gap: 30px;
+  }
+  
+  ul.logos li {
+	flex: 0 0 auto;
   }
   
   ul.logos img {
+	width: 100px; /* make logos smaller */
+	height: auto;
 	filter: grayscale(100%);
 	transition: filter 0.3s ease;
   }
