@@ -101,19 +101,10 @@
 .sidebar .sdb_holder{margin-bottom:50px;}
 .sidebar .sdb_holder:last-child{margin-bottom:0;}
 
-#header .header-inner {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px 30px;
+#logo img {
+	height: auto;
+	max-height: 60px; /* Optional limit */
   }
-  
-  #logo img {
-	height: 60px; /* Adjust as needed */
-	width: auto;
-	display: block;
-  }
-  
   
   ul.logos img {
 	filter: grayscale(100%);
