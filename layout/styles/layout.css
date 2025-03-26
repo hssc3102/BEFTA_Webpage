@@ -17,6 +17,11 @@
 #header #logo{margin:22px 0 0 0;}
 #header #logo h1{margin:0; padding:0; font-size:2rem; font-variant:small-caps;}
 
+#logo img {
+	height: 60px; /* or whatever size you want */
+	width: auto; /* maintain aspect ratio */
+  }
+
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
@@ -132,12 +137,6 @@ Delete this section if roundness is not wanted / required
 .btn{border-radius:14px;}
 #footer input, #footer button{border-radius:12px;}
 
-
-/* Transition Fade
-This gives a smooth transition to "ALL" elements used in the layout - other than the navigation form used in mobile devices
-If you don't want it to fade all elements, you have to list the ones you want to be faded individually
-Delete it completely to stop fading
---------------------------------------------------------------------------------------------------------------- */
 *, *::before, *::after{transition:all .3s ease-in-out;}
 #mainav form *{transition:none !important;}
 
@@ -243,7 +242,7 @@ td{border-width:0 1px;}
 .faicon-google-plus:hover{background-color:#DB4A39;}
 .faicon-linkedin:hover{background-color:#0E76A8;}
 .faicon-twitter:hover{background-color:#00ACEE;}
-.faicon-vk:hover{background-color:#4E658E;}
+
 
 
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -259,7 +258,7 @@ body{color:#FFFFFF; background-color:#228B22;}
 a{color:#228B22;}
 a:active, a:focus{background:transparent !important;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
-label span{color:#FF0000; background-color:inherit;}
+label span{color:#00ff55; background-color:inherit;}
 input:focus, textarea:focus, *:required:focus{border-color:#228B22 !important;}
 
 .overlay{color:#FFFFFF; background-color:inherit;}
@@ -267,7 +266,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#228B22 !important;}
 .overlay.light{color:#474747;}
 .overlay.light::after{background-color:rgba(255,255,255,.7);}
 
-.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#0AC6FC; border-color:#0AC6FC;}
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#0afc77; border-color:#0AC6FC;}
 .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
 
 .imgover:hover::before{background-color:rgba(10, 252, 119, 0.3);/* #0AC6FC */}
@@ -321,21 +320,21 @@ input:focus, textarea:focus, *:required:focus{border-color:#228B22 !important;}
 
 /* Navigation */
 #mainav li a{color:inherit;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#0AC6FC; background-color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#1f6b01; background-color:inherit;}
 #mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(10,198,252,.5); border-color:rgba(10,198,252,.5);/* #0AC6FC */}
-#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#0AC6FC;}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#1f6b01;}
 #mainav form select{color:#474747; background-color:#FFFFFF; border-color:#D7D7D7;}
 
 #breadcrumb *{color:#FFFFFF; background-color:inherit;}
-#breadcrumb li:last-child a{color:#0AC6FC;}
+#breadcrumb li:last-child a{color:#1f6b01;}
 
 .container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
-.container .sidebar nav a:hover{color:#0AC6FC;}
+.container .sidebar nav a:hover{color:#1f6b01;}
 
 .pagination a, .pagination strong{border-color:#D7D7D7;}
-.pagination .current *{color:#FFFFFF; background-color:#0AC6FC;}
+.pagination .current *{color:#FFFFFF; background-color:#1f6b01;}
 
-#backtotop{color:#FFFFFF; background-color:#0AC6FC;}
+#backtotop{color:#FFFFFF; background-color:#1f6b01;}
 
 
 /* Tables + Comments */
@@ -413,6 +412,12 @@ table a, #comments a{background-color:inherit;}
 	#points li{display:block; float:none; width:100%; margin-left:0;}
 	#points li:nth-last-child(2){margin-bottom:20px;}
 }
+
+@media screen and (max-width: 768px) {
+	#logo img {
+	  height: 40px;
+	}
+  }
 
 
 /* Other
