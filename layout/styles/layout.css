@@ -13,9 +13,8 @@
 #header #logo h1{margin:0; padding:0; font-size:2rem; font-variant:small-caps;}
 
 #logo img {
-	height: auto;
-	width: 300px;
-	max-height: none; /* override the 30px limit */
+	height: 300px;
+	width: auto;
   }
 
 
@@ -96,36 +95,6 @@
 #comments textarea{overflow:auto;}
 #comments div{margin-bottom:15px;}
 #comments input[type="submit"], #comments input[type="reset"]{display:inline-block; width:auto; min-width:150px; margin:0; padding:8px 5px; cursor:pointer;}
-
-/* Sidebar */
-
-.sidebar .sdb_holder{margin-bottom:50px;}
-.sidebar .sdb_holder:last-child{margin-bottom:0;}
-
-ul.logos {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	padding: 20px 0;
-	gap: 30px;
-  }
-  
-  ul.logos li {
-	flex: 0 0 auto;
-  }
-  
-  ul.logos img {
-	width: 100px; /* make logos smaller */
-	height: auto;
-	filter: grayscale(100%);
-	transition: filter 0.3s ease;
-  }
-  
-  ul.logos img:hover {
-	filter: grayscale(0%);
-  }
-  
 
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
