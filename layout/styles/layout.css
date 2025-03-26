@@ -101,6 +101,28 @@
 .sidebar .sdb_holder{margin-bottom:50px;}
 .sidebar .sdb_holder:last-child{margin-bottom:0;}
 
+ul.logos img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	object-fit: contain;
+  }
+  
+  ul.logos li {
+	text-align: center;
+  }
+  
+  ul.logos img {
+	filter: grayscale(100%);
+	transition: filter 0.3s ease;
+  }
+  
+  ul.logos img:hover {
+	filter: grayscale(0%);
+  }
+  
 
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
