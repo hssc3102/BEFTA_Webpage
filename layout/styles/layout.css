@@ -103,7 +103,7 @@
 
 #logo img {
 	height: auto;
-	max-height: 60px; /* Optional limit */
+	max-height: 30px; /* Optional limit */
   }
   
   ul.logos img {
