@@ -192,6 +192,15 @@
     }
   }
   
+  .timeline-container {
+    scroll-snap-type: x mandatory;
+    scroll-padding: 20px;
+  }
+  
+  .timeline-item {
+    scroll-snap-align: start;
+  }
+  
 
   @media screen and (max-width: 768px) {
     .timeline-container {
