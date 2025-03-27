@@ -1,0 +1,40 @@
+/* General Page Layout */
+.wrapper {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Project Section Headers */
+  .project-header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #228B22; /* Dark forest green */
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* PDF List Styling */
+  .resource-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .resource-list li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .resource-list a {
+    color: #145214;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .resource-list a:hover {
+    text-decoration: underline;
+    color: #0c3c0c;
+  }
+  
