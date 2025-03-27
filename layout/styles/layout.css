@@ -12,10 +12,21 @@
 #header #logo{margin:22px 0 0 0;}
 #header #logo h1{margin:0; padding:0; font-size:2rem; font-variant:small-caps;}
 
-#logo img {
-	max-height: 80px;
+.header-flex {
+	display: flex;
+	align-items: center; /* vertically aligns items */
+	gap: 20px; /* spacing between logo and title */
+  }
+  
+  #logo img {
+	max-height: 80px; /* adjust as needed */
 	height: auto;
-	width: auto;
+  }
+  
+  .site-title h1 {
+	font-size: 2.5rem; /* match your design */
+	margin: 0;
+	color: #ffffff;
   }
 
 
@@ -316,7 +327,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#228B22 !important;}
 
 /* Navigation */
 #mainav li a{color:inherit;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#1f6b01; background-color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#FFFFFF; background-color:inherit;}
 #mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(10, 252, 10, 0.5); border-color:rgba(10,252,10,0.5);/* #0AC6FC */}
 #mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#1f6b01;}
 #mainav form select{color:#474747; background-color:#FFFFFF; border-color:#D7D7D7;}
