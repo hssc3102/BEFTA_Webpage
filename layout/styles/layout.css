@@ -13,7 +13,8 @@
 #header #logo h1{margin:0; padding:0; font-size:2rem; font-variant:small-caps;}
 
 #logo img {
-	height: 300px;
+	max-height: 80px;
+	height: auto;
 	width: auto;
   }
 
@@ -111,6 +112,12 @@
 #footer .linklist li:last-child{margin:0; padding:0; border:none;}
 #footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
 #footer .linklist li, #footer .linklist li::after{clear:both;}
+
+.footer-logos img {
+	max-width: 120px; /* alter logo sizes */
+	height: auto; /* automatically changes based on height */
+	margin: 10px;
+  }
 
 
 /* Copyright
@@ -285,7 +292,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#228B22 !important;}
 #services li article{border-color:#228B22;}
 #services li article a{color:inherit;}
 #services li article:hover{color:#FFFFFF; background-color:#228B22;}
-#services li article:hover a{color:#228B22;}
+#services li article:hover a{color:#FFFFFF;}
 #services li article > a > i{color:#FFFFFF; background-color:#228B22; border-color:rgba(0,0,0,.1);}
 #services li article:hover > a > i{background-color:#228B22;}
 
