@@ -149,41 +149,56 @@
   </div>
 
   <!-- Footer -->
-  <div class="wrapper row5">
-    <footer id="footer" class="hoc clear">
-      <p>© 2025 BEFTA Research</p>
+  <div class="wrapper row4">
+    <footer id="footer" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div class="one_third first">
+        <h6 class="heading">Keep up to date with our team</h6>
+        <p> We are constantly uploading stories and news about the research completed by our amazing team. Follow us for more stories and the latest news [<a href="#">&hellip;</a>]</p>
+        <ul class="faico clear">
+          <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li> 
+          <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+        </ul>
+      </div>
+      <div class="one_third">
+        <h6 class="heading">ABOUT</h6>
+        <ul class="nospace linklist">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Vision & Strategy</a></li>
+          <li><a href="#">Collaborators</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+      <div class="one_third">
+        <div class="logo-grid">
+          <img src="images/collaborators/IPB_University.svg" alt="IPB University" style="height:40px; margin-bottom:10px;">
+          <img src="images/collaborators/SinarMas.png" alt="Sinar Mas" style="height:40px; margin-bottom:10px;">
+          <img src="images/collaborators/University_Cambridge.png" alt="University of Cambridge" style="height:40px; margin-bottom:10px;">
+          <img src="images/collaborators/University_Nottingham.svg" alt="University of Nottingham" style="height:40px;">
+      </div>
+      <!-- ################################################################################################ -->
     </footer>
   </div>
-
-  <!-- JavaScript for Tabs -->
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll('.tab-btn');
-    const contents = document.querySelectorAll('.tab-content');
-
-    function activateTabById(tabId) {
-      tabs.forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.target === tabId);
-      });
-
-      contents.forEach(content => {
-        content.classList.toggle('active', content.id === tabId);
-      });
-    }
-
-    // Handle direct link via URL hash (e.g. #rerta)
-    const hash = window.location.hash.substring(1);
-    if (hash) {
-      activateTabById(hash);
-    }
-
-    // Handle click on tab buttons
-    tabs.forEach(btn => {
-      btn.addEventListener('click', () => {
-        activateTabById(btn.dataset.target);
-      });
-    });
-  });
-  </script>
-</body>
-</html>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row5">
+    <div id="copyright" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <p class="fl_left"> &copy; 2025 Oil Palm Biodiversity. All Rights Reserved - <a href="#"></a></p>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+  <!-- JAVASCRIPTS -->
+  <script src="layout/scripts/jquery.min.js"></script>
+  <script src="layout/scripts/jquery.backtotop.js"></script>
+  <script src="layout/scripts/jquery.mobilemenu.js"></script>
+  </body>
+  </html>
