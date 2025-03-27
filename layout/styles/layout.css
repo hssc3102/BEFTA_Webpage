@@ -15,7 +15,7 @@
 .header-flex {
 	display: flex;
 	align-items: center; /* vertically aligns items */
-	gap: 20px; /* spacing between logo and title */
+	gap: 40px; /* spacing between logo and title */
   }
   
   #logo img {
