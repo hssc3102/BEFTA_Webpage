@@ -116,4 +116,73 @@
     margin: 0.2rem 0 0;
     color: #333;
   }
+  .timeline-event {
+    animation: fadeInUp 1s ease;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate(-50%, 20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .timeline-container {
+      height: auto;
+      padding-left: 30px;
+      border-left: 4px solid #228B22;
+      position: relative;
+    }
+  
+    .timeline-line {
+      display: none;
+    }
+  
+    .timeline-event {
+      position: relative;
+      left: 0 !important;
+      transform: none;
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+  
+    .timeline-event .bubble {
+      position: absolute;
+      left: -33px;
+      top: 0;
+      background-color: #228B22;
+      width: 24px;
+      height: 24px;
+      font-size: 1rem;
+      line-height: 24px;
+      text-align: center;
+      border-radius: 50%;
+      color: #fff;
+    }
+  
+    .timeline-event .label {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-left: 1.5rem;
+    }
+  
+    .timeline-event .label h4 {
+      color: #228B22;
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+  
+    .timeline-event .label p {
+      color: #333;
+      font-size: 0.9rem;
+    }
+  }
   
