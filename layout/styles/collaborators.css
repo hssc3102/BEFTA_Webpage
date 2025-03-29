@@ -1,6 +1,5 @@
-#logo img {
-  display: block;
-  padding-bottom: 10px; /* Adjust as needed */
+#header #logo img {
+  padding-bottom: 10px !important;
 }
 
 .tab-buttons {
