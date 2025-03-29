@@ -1,3 +1,8 @@
+#logo img {
+    display: block;
+    padding-bottom: 10px; /* Adjust as needed */
+  }
+
 /* Team Grid Layout */
 .team-grid {
     display: grid;
