@@ -90,3 +90,18 @@
     max-height: 100%;
     object-fit: contain;
     }
+
+    #footer .linklist li a {
+      color: #FFFFFF !important
+    }
+
+    .wrapper.row4 {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #footer {
+      width: 100%;
+    }
+    
