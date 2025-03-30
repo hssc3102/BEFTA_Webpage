@@ -333,16 +333,17 @@ input:focus, textarea:focus, *:required:focus{border-color:#228B22 !important;}
 /* Footer */
 #footer .heading{color:#FFFFFF;}
 #footer hr, #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.1);}
+#footer .linklist li,
+#footer .linklist li a {
+  color: #FFFFFF;
+}
 
 #footer input, #footer button{border-color:transparent;}
 #footer input{color:#FFFFFF; background-color:rgba(255,255,255,.2);}
 #footer input:focus{background-color:#FFFFFF;}
 #footer button{color:#FFFFFF; background-color:#FFFFFF;}
 #footer button:hover{color:inherit; background-color:transparent; border-color:inherit;}
-#footer .linklist li,
-#footer .linklist li a {
-  color: #FFFFFF;
-}
+
 
 
 /* Navigation */
