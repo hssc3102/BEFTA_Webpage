@@ -124,6 +124,19 @@
 #footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
 #footer .linklist li, #footer .linklist li::after{clear:both;}
 
+.wrapper.row4 {
+	width: 100%;
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #228B22 !important;
+  }
+  
+  #footer {
+	width: 100%;
+	box-sizing: border-box;
+  }
+
 .logo-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
