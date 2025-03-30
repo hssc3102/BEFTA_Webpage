@@ -335,7 +335,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#228B22 !important;}
 #footer hr, #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.1);}
 #footer .linklist li,
 #footer .linklist li a {
-  color: #FFFFFF;
+  color: #FFFFFF !important
 }
 
 #footer input, #footer button{border-color:transparent;}
