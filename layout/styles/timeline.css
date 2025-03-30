@@ -46,6 +46,11 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.timeline-step:hover .circle {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
 .timeline-step .year {
   font-weight: bold;
   margin-top: 10px;
@@ -75,7 +80,7 @@
 .teal { background-color: #00b3b3; }
 .green { background-color: #7dbd00; }
 .orange { background-color: #f4a300; }
-.red { background-color: #e74c3c; }
+.circle.red { background-color: #e74c3c; }
   
   /* Responsive: stack vertically on mobile */
   @media (max-width: 768px) {
@@ -97,6 +102,27 @@
   
   .timeline-item {
     scroll-snap-align: start;
+  }
+
+  .timeline-horizontal {
+    position: relative;
+    padding-top: 60px;
+  }
+  
+  .timeline-horizontal::before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #ccc;
+    z-index: 0;
+  }
+  
+  .timeline-step {
+    position: relative;
+    z-index: 1; /* bring icons above the line */
   }
   
 
