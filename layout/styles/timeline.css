@@ -19,11 +19,25 @@
 .timeline-horizontal {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding-bottom: 3rem;
+  align-items: center;
+  margin: 100px auto;
+  max-width: 1000px;
+  position: relative;
+  padding: 60px 0;
 }
+
+.timeline-horizontal::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #ccc;
+  z-index: 0;
+  transform: translateY(-50%);
+}
+
 
 .timeline-step {
   position: relative;
@@ -32,18 +46,32 @@
   margin: 40px 0;
 }
 
-.timeline-step .circle {
+.circle {
   width: 80px;
   height: 80px;
-  margin: 0 auto;
   border-radius: 50%;
-  background-color: #ccc;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 30px;
+  color: white;
+}
+
+.circle.red {
+  background-color: #e74c3c !important;
+}
+.circle.green {
+  background-color: #7dbd00 !important;
+}
+.circle.teal {
+  background-color: #00b3b3 !important;
+}
+.circle.orange {
+  background-color: #f4a300 !important;
+}
+
+.circle i {
+  color: white !important;
 }
 
 .timeline-step:hover .circle {
@@ -76,11 +104,6 @@
   margin-top: 12px;
 }
 
-/* Colors */
-.teal { background-color: #00b3b3; }
-.green { background-color: #7dbd00; }
-.orange { background-color: #f4a300; }
-.circle.red { background-color: #e74c3c; }
   
   /* Responsive: stack vertically on mobile */
   @media (max-width: 768px) {
