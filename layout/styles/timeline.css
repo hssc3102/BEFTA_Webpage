@@ -16,34 +16,6 @@
   margin-bottom: 2rem;
 }
 
-.timeline-horizontal {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 80px auto;
-  padding: 60px 0;
-  max-width: 1000px;
-  position: relative; /* Key for absolute positioning of the line */
-}
-
-.timeline-horizontal::before {
-  content: "";
-  position: absolute;
-  top: 50%; /* Center vertically in the timeline */
-  left: 0;
-  right: 0;
-  height: 4px;
-  background-color: #ccc;
-  z-index: 1;
-  transform: translateY(-50%); /* Aligns exactly through center of the circles */
-}
-
-
-.timeline-step {
-  position: relative;
-  text-align: center;
-  z-index: 2; /* Higher than the line */
-}
 
 .circle {
   width: 80px;
