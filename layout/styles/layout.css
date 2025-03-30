@@ -124,10 +124,26 @@
 #footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
 #footer .linklist li, #footer .linklist li::after{clear:both;}
 
-.footer-logos img {
-	max-width: 250px; /* alter logo sizes */
-	height: auto; /* automatically changes based on width */
-	margin: 10px;
+.logo-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px 30px; /* vertical and horizontal spacing */
+	justify-items: center;
+	align-items: center;
+  }
+  
+  .logo-item {
+	width: 150px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .logo-item img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
   }
 
 
@@ -320,8 +336,8 @@ input:focus, textarea:focus, *:required:focus{border-color:#228B22 !important;}
 
 #footer input, #footer button{border-color:transparent;}
 #footer input{color:#FFFFFF; background-color:rgba(255,255,255,.2);}
-#footer input:focus{background-color:#6bfc0a;}
-#footer button{color:#FFFFFF; background-color:#6bfc0a;}
+#footer input:focus{background-color:#FFFFFF;}
+#footer button{color:#FFFFFF; background-color:#FFFFFF;}
 #footer button:hover{color:inherit; background-color:transparent; border-color:inherit;}
 
 
