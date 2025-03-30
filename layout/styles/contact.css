@@ -1,3 +1,7 @@
+#header #logo img {
+  padding-bottom: 10px !important;
+}
+
 .contact-form-box {
     max-width: 600px;
     margin: 0 auto;
@@ -37,3 +41,24 @@
     background-color: #145214;
   }
   
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px; /* vertical and horizontal spacing */
+    justify-items: center;
+    align-items: center;
+    }
+    
+    .logo-item {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .logo-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    }
