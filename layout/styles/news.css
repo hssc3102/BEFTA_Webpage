@@ -1,3 +1,8 @@
+#logo img {
+  display: block;
+  padding-bottom: 10px; /* Adjust as needed */
+}
+
 .news-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
