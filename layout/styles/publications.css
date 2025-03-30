@@ -69,6 +69,23 @@
   box-sizing: border-box;
 }
 
+.wrapper.row4 {
+  background-color: #228B22 !important;
+  color: #ffffff !important;
+}
+
+#footer a {
+  color: #ffffff;
+}
+
+#footer .heading {
+  color: #ffffff;
+}
+
+#footer .faico a:hover {
+  background-color: #0afc77;
+  color: white;
+}
 
 /* Fix layout issue in logo column */
 .logo-grid {
