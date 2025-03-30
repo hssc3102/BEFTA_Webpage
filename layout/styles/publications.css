@@ -69,32 +69,6 @@
   box-sizing: border-box;
 }
 
-/* Ensure footer gets expected background */
-#footer {
-  background-color: #333;
-  color: #fff;
-}
-
-#footer .heading {
-  color: #fff;
-}
-
-#footer a {
-  color: #fff;
-}
-
-#footer a:hover {
-  color: #0afc77;
-}
-
-#footer .faico a {
-  background-color: rgba(255,255,255,0.2);
-}
-
-#footer .faico a:hover {
-  background-color: #228B22;
-  color: white;
-}
 
 /* Fix layout issue in logo column */
 .logo-grid {
