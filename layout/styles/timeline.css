@@ -104,22 +104,6 @@
     padding-top: 60px;
   }
   
-  .timeline-horizontal::before {
-    content: "";
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: #ccc;
-    z-index: 0;
-  }
-  
-  .timeline-step {
-    position: relative;
-    z-index: 1; /* bring icons above the line */
-  }
-  
 
   @media screen and (max-width: 768px) {
     .timeline-container {

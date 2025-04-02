@@ -62,3 +62,7 @@
     max-height: 100%;
     object-fit: contain;
     }
+
+    #footer .linklist li a {
+      color: #FFFFFF !important
+    }
