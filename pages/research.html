@@ -207,5 +207,27 @@
   <script src="layout/scripts/jquery.min.js"></script>
   <script src="layout/scripts/jquery.backtotop.js"></script>
   <script src="layout/scripts/jquery.mobilemenu.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const tabContents = document.querySelectorAll(".tab-content");
+  
+      tabButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          const targetId = button.getAttribute("data-target");
+  
+          // Remove 'active' class from all buttons and contents
+          tabButtons.forEach(btn => btn.classList.remove("active"));
+          tabContents.forEach(content => content.classList.remove("active"));
+  
+          // Add 'active' to clicked button and matching content
+          button.classList.add("active");
+          document.getElementById(targetId).classList.add("active");
+        });
+      });
+    });
+  </script>
+  
   </body>
   </html>
