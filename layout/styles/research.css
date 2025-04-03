@@ -79,3 +79,23 @@
     max-height: 100%;
     object-fit: contain;
     }
+
+    .project-figure-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 2rem 0;
+      flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+    }
+    
+    .project-figure {
+      flex: 1 1 calc(33.333% - 20px);
+      text-align: center;
+    }
+    
+    .project-figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
