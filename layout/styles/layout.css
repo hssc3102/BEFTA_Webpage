@@ -108,6 +108,38 @@
 #comments div{margin-bottom:15px;}
 #comments input[type="submit"], #comments input[type="reset"]{display:inline-block; width:auto; min-width:150px; margin:0; padding:8px 5px; cursor:pointer;}
 
+/* Gallery format
+--------------------------------------------------------------------------------------------------------------- */
+.imgover {
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .imgover img {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  
+  .imgover .caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 8px;
+	background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+	color: #fff;
+	font-size: 0.9rem;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+  }
+  
+  .imgover:hover .caption {
+	opacity: 1;
+  }
+  
+
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
 #footer{padding:80px 0;}
