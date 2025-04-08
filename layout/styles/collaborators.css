@@ -2,6 +2,11 @@
   padding-bottom: 10px !important;
 }
 
+.bgded {
+  background-image: none !important;
+}
+
+
 .tab-buttons {
     display: flex;
     justify-content: center;

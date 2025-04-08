@@ -93,6 +93,9 @@
     display: block;
   }
   
+  .bgded {
+    background-image: none !important;
+  }
 
 .logo-grid {
 	display: grid;

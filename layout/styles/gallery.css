@@ -3,6 +3,11 @@
   padding-bottom: 10px; /* Adjust as needed */
 }
 
+.bgded {
+  background-image: none !important;
+}
+
+
 /* General Page Layout */
 .wrapper {
     padding: 2rem;

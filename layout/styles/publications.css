@@ -3,6 +3,10 @@
   padding-bottom: 10px; /* Adjust as needed */
 }
 
+.bgded {
+  background-image: none !important;
+}
+
 .project-section {
     margin-bottom: 40px;
     padding: 20px;
